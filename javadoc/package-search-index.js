@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"lattesite.structured.data.enumeration"},{"l":"lattesite.structured.data.schemas"},{"l":"lattesite.structured.data.services"},{"l":"lattesite.structured.data.utils"}];updateSearchResults();
