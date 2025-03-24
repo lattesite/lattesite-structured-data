@@ -1,10 +1,12 @@
-# LatteSite Structured Data Generator
+# LatteSite - Structured Data Generator
 
 This is an SEO Structured Data generator written in Java.
 
-This is primary a module for the main LatteSite Static Site Generator project, but it may be used as a stand-alone generator.
+This is primary a part of the main LatteSite Static Site Generator project, but it may be used as a stand-alone generator.
 
-For more information, please visit the main LatteSite SSG repository.
+For more information, please visit the main LatteSite repository.
+
+
 
 ## Releases
 
@@ -89,6 +91,13 @@ public class MainExample {
 
 }
 ```
+
+## Architecture & Principles
+
+This project follows the same design architecture and coding principles as the main project:
+
+- https://github.com/lattesite/lattesite
+
 
 ## License
 

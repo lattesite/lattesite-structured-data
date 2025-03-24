@@ -4,7 +4,7 @@ import lattesite.structured.data.enumeration.GenderType;
 import lattesite.structured.data.schemas.StructuredDataPerson;
 import lattesite.structured.data.services.StructuredDataService;
 
-public class MainExample {
+public class MainQuickExample {
 
     public static void main(String[] args) throws Exception {
 
