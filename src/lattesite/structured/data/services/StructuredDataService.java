@@ -1,6 +1,5 @@
 package lattesite.structured.data.services;
 
-
 import lattesite.structured.data.schemas.*;
 import lattesite.structured.data.utils.StringUtil;
 
@@ -58,7 +57,9 @@ public class StructuredDataService {
         data.put("description", sdOrganization.getDescription());
         data.put("email", sdOrganization.getEmail());
         data.put("areaServed", dataAreaServed);
-        data.put("knowsLanguage", sdOrganization.getKnowsLanguage());
+        if (!StringUtil.isEmpty(sdOrganization.getKnowsLanguage())) {
+            data.put("knowsLanguage", sdOrganization.getKnowsLanguage());
+        }
         data.put("foundingDate", sdOrganization.getFoundingDate());
         data.put("isicV4", sdOrganization.getIsicV4Categories());
         data.put("brand", dataBrand);

@@ -9,7 +9,6 @@ public class StructuredDataOrganization implements StructuredDataSchema {
     private final String description;
     private final String email;
     private final StructuredDataCountry areaServed;
-    private final String knowsLanguage;
     private final String foundingDate;
     private final String[] isicV4Categories;
     private final String keywords;
@@ -19,6 +18,7 @@ public class StructuredDataOrganization implements StructuredDataSchema {
     private StructuredDataMerchantReturnPolicy hasMerchantReturnPolicy;
     private StructuredDataBrand brand;
     private StructuredDataBrand owns;
+    private String knowsLanguage;
 
     public StructuredDataOrganization(
             String name,
@@ -27,7 +27,6 @@ public class StructuredDataOrganization implements StructuredDataSchema {
             String description,
             String email,
             StructuredDataCountry areaServed,
-            String knowsLanguage,
             String foundingDate,
             String[] isicV4Categories,
             String keywords,
@@ -42,7 +41,6 @@ public class StructuredDataOrganization implements StructuredDataSchema {
         this.description = description;
         this.email = email;
         this.areaServed = areaServed;
-        this.knowsLanguage = knowsLanguage;
         this.foundingDate = foundingDate;
         this.isicV4Categories = isicV4Categories;
         this.keywords = keywords;
@@ -52,10 +50,15 @@ public class StructuredDataOrganization implements StructuredDataSchema {
         this.hasMerchantReturnPolicy = null;
         this.brand = null;
         this.owns = null;
+        this.knowsLanguage = null;
     }
 
     public String getType() {
         return this.type;
+    }
+
+    public void setKnowsLanguage(String knowsLanguage) {
+        this.knowsLanguage = knowsLanguage;
     }
 
     public void setBrand(StructuredDataBrand brand) {
