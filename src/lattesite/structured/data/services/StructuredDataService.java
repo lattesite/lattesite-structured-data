@@ -295,11 +295,13 @@ public class StructuredDataService {
         data.put("category", sd.getCategories());
         data.put("image", sd.getImageURLs());
         data.put("brand", toMap(sd.getBrand()));
-        data.put("sku", sd.getSku());
-        data.put("productID", sd.getEan());
-        data.put("ean", sd.getEan());
-        data.put("gtin", sd.getEan());
-        data.put("gtin13", sd.getEan());
+        if (!StringUtil.isEmpty(sd.getEAN())) {
+            data.put("ean", sd.getEAN());
+        }
+        data.put("sku", sd.getSKU());
+        data.put("productID", sd.getSKU());
+        data.put("gtin", sd.getSKU());
+        data.put("gtin13", sd.getSKU());
 
         data.put("offers", toMap(sd.getOffers()));
         data.put("audience", toMap(sd.getAudience()));

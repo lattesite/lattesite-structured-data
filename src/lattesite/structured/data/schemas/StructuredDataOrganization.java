@@ -10,7 +10,7 @@ public class StructuredDataOrganization implements StructuredDataSchema {
     private final String email;
     private final StructuredDataCountry areaServed;
     private final String foundingDate;
-    private final String[] isicV4Categories;
+    private final String[] isicV4Categories; // https://unstats.un.org/unsd/trade/events/2013/foc/recommendations/1b%20-%20UN%20ISIC,%20Revision%204.pdf
     private final String keywords;
     private final String knowsAbout;
     private final String vatID;

@@ -10,8 +10,6 @@ public class StructuredDataProduct implements StructuredDataSchema {
     private final List<String> categories;
     private final List<String> imageURLs;
     private final String sku;
-    private final String ean;
-    //    private final Map<ProductProperty, ProductPropertyValue> properties;
     private final int price;
     private final boolean inStock;
     private final List<String> awards;
@@ -19,6 +17,7 @@ public class StructuredDataProduct implements StructuredDataSchema {
     private final StructuredDataPeopleAudience audience;
     private final StructuredDataBrand brand;
     private final List<StructuredDataPropertyValue> additionalProperties;
+    private String ean;
 
     public StructuredDataProduct(
             String name,
@@ -26,8 +25,6 @@ public class StructuredDataProduct implements StructuredDataSchema {
             List<String> categories,
             List<String> imageURLs,
             String sku,
-            String ean,
-//            Map<ProductProperty, ProductPropertyValue> properties,
             int price,
             boolean inStock,
             List<String> awards,
@@ -40,8 +37,6 @@ public class StructuredDataProduct implements StructuredDataSchema {
         this.categories = categories;
         this.imageURLs = imageURLs;
         this.sku = sku;
-        this.ean = ean;
-//        this.properties = properties;
         this.price = price;
         this.inStock = inStock;
         this.awards = awards;
@@ -49,6 +44,7 @@ public class StructuredDataProduct implements StructuredDataSchema {
         this.audience = audience;
         this.brand = brand;
         this.additionalProperties = new ArrayList<>();
+        this.ean = "";
     }
 
     @Override
@@ -72,17 +68,17 @@ public class StructuredDataProduct implements StructuredDataSchema {
         return imageURLs;
     }
 
-    public String getSku() {
+    public String getSKU() {
         return sku;
     }
 
-    public String getEan() {
+    public String getEAN() {
         return ean;
     }
 
-//    public Map<ProductProperty, ProductPropertyValue> getProperties() {
-//        return properties;
-//    }
+    public void setEAN(String ean) {
+        this.ean = ean;
+    }
 
     public int getPrice() {
         return price;
