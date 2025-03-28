@@ -242,7 +242,7 @@ public class StructuredDataService {
         data.put("@context", "https://schema.org/");
         data.put("@type", "PeopleAudience");
 
-        data.put("suggestedGender", sd.getSuggestedGender());
+        data.put("suggestedGender", sd.getSuggestedGender().getValue());
         data.put("audienceType", sd.getAudienceType());
         data.put("geographicArea", toMap(sd.getGeographicArea()));
 
@@ -545,8 +545,7 @@ public class StructuredDataService {
 
     private String formatJSONValue(String s) {
 
-        s = s.replaceAll("\"", "\\");
-//        s = s.replaceAll("\", "\\\\");
+        s = s.replaceAll("\"", "\\\\\"");
         s = s.replaceAll("\b", "\\b");
         s = s.replaceAll("\f", "\\f");
         s = s.replaceAll("\n", "\\n");

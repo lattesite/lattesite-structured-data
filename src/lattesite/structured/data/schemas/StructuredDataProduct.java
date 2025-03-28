@@ -10,7 +10,7 @@ public class StructuredDataProduct implements StructuredDataSchema {
     private final List<String> categories;
     private final List<String> imageURLs;
     private final String sku;
-    private final int price;
+    private final double price;
     private final boolean inStock;
     private final List<String> awards;
     private final StructuredDataOffer offers;
@@ -25,7 +25,7 @@ public class StructuredDataProduct implements StructuredDataSchema {
             List<String> categories,
             List<String> imageURLs,
             String sku,
-            int price,
+            double price,
             boolean inStock,
             List<String> awards,
             StructuredDataOffer offers,
@@ -80,7 +80,7 @@ public class StructuredDataProduct implements StructuredDataSchema {
         this.ean = ean;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 

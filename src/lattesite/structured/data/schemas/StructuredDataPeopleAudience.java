@@ -1,15 +1,17 @@
 package lattesite.structured.data.schemas;
 
+import lattesite.structured.data.enumeration.GenderType;
+
 public class StructuredDataPeopleAudience {
 
     private final StructuredDataCountry geographicArea;
     private final String audienceType;
-    private final String suggestedGender;
+    private final GenderType suggestedGender;
 
     public StructuredDataPeopleAudience(
             StructuredDataCountry geographicArea,
             String audienceType,
-            String suggestedGender
+            GenderType suggestedGender
     ) {
         this.geographicArea = geographicArea;
         this.audienceType = audienceType;
@@ -24,7 +26,7 @@ public class StructuredDataPeopleAudience {
         return this.audienceType;
     }
 
-    public String getSuggestedGender() {
+    public GenderType getSuggestedGender() {
         return this.suggestedGender;
     }
 

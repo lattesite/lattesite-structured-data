@@ -3,7 +3,8 @@ package lattesite.structured.data.enumeration;
 public enum GenderType {
 
     FEMALE("https://schema.org/Female"),
-    MALE("https://schema.org/Male");
+    MALE("https://schema.org/Male"),
+    UNISEX("https://schema.org/Unisex");
 
     private final String value;
 
